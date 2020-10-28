@@ -2,7 +2,7 @@
 
 Necessary software: 
 - Fiji https://imagej.net/Fiji + FFT bandpass filter https://imagej.nih.gov/ij/plugins/fft-filter.html
-- OpenCV https://opencv.org/ [https://github.com/opencv/opencv]
+- OpenCV https://opencv.org/ 
 
 # Algorithms									
 									
@@ -12,22 +12,27 @@ bandpass adjustment of uneven illumination (all pictures are much brighter in th
 - Fiji macro for FFT bandpass filter: filter_large=40, filter_small=3, suppress=None, tolerance=5, autoscale, saturate												
 ## Running .cpp files
 
-extraction of experiment information									
+**int main()**	
+extraction of experiment information 								
 - folder name									
 - file names									
 - extraction of timepoints + calculation of time after inoculation									
-									
-measurement of brightness									
-- to discriminate day and night images									
-									
-adjustment of brightness									
-- to create even distribution of intensities									
-									
-find potential lesions									
-- convert RGB images to HSV									
-- extract range of  hue values (different range between day and night images)						
-- apply morphological operations (dilation, erosion) to remove noise									
-									
+
+	**vector<int> measure_brightness()**
+	measurement of brightness									
+	- to discriminate day and night images									
+
+	**Mat normalization() and Mat adjusted_brightness()**	
+	adjustment of brightness									
+	- to create even distribution of intensities									
+
+	**Mat findLesions1() and Mat findLesions2()**
+	find potential lesions									
+	- convert RGB images to HSV									
+	- extract range of hue values (different range between day and night images)						
+	- apply morphological operations (dilation, erosion) to remove noise									
+
+
 find contours									
 - apply contours (vector of points) to potential lesions									
 - exclude contours near to the image border									
@@ -35,7 +40,7 @@ find contours
 - extract geometrical features for all contours: mass center, minimum enclosing circle, radius									
 									
 processing of contours (to extract real lesions)									
-- compare all candidates with each other via area of intersecting circles (minimum enclosing circles)	-->	possibility to insert manual determined lesions (necessary parameters: mass point (x, y), lesions area)
+- compare all candidates with each other via area of intersecting circles (minimum enclosing circles) --> possibility to insert manual determined lesions (necessary parameters: mass point (x, y), lesions area)
 - if candidate is inside of another, add area to bigger one									
 - calculate all distances between mass points to all given lesions from the previous picture									
 - find most suitable candidate via smallest distance: all lesions from the previous picture should have a follower									
