@@ -18,15 +18,15 @@ extraction of experiment information
 - file names									
 - extraction of timepoints + calculation of time after inoculation									
 
-	**vector<int> measure_brightness()**
+	**vector<int> measure_brightness()**:
 	measurement of brightness									
 	- to discriminate day and night images									
 
-	**Mat normalization() and Mat adjusted_brightness()**	
+	**Mat normalization() and Mat adjusted_brightness()**:	
 	adjustment of brightness									
 	- to create even distribution of intensities									
 
-	**Mat findLesions1() and Mat findLesions2()**
+	**Mat findLesions1() and Mat findLesions2()**:
 	find potential lesions									
 	- convert RGB images to HSV									
 	- extract range of hue values (different range between day and night images)						
