@@ -6,11 +6,11 @@ Necessary software:
 
 # Algorithms									
 									
-Preprocessing with Fiji
+## Preprocessing with Fiji
 
 bandpass adjustment of uneven illumination (all pictures are much brighter in the middle part)									
 - Fiji macro for FFT bandpass filter: filter_large=40, filter_small=3, suppress=None, tolerance=5, autoscale, saturate												
-Running .cpp files
+## Running .cpp files
 
 extraction of experiment information									
 - folder name									
