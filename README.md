@@ -1,35 +1,40 @@
 # circadian-lesion
 
-depends on: https://opencv.org/ [https://github.com/opencv/opencv]
+Necessary software: 
+- Fiji https://imagej.net/Fiji + FFT bandpass filter https://imagej.nih.gov/ij/plugins/fft-filter.html
+- OpenCV https://opencv.org/ [https://github.com/opencv/opencv]
 
 # Algorithms									
 									
-1. bandpass adjustment of uneven illumination (all pictures are much brighter in the middle part)									
+Preprocessing with Fiji
+
+bandpass adjustment of uneven illumination (all pictures are much brighter in the middle part)									
 - Fiji macro for FFT bandpass filter: filter_large=40, filter_small=3, suppress=None, tolerance=5, autoscale, saturate												
-									
-2. extraction of experiment information									
+Running .cpp files
+
+extraction of experiment information									
 - folder name									
 - file names									
 - extraction of timepoints + calculation of time after inoculation									
 									
-3. measurement of brightness									
+measurement of brightness									
 - to discriminate day and night images									
 									
-4. adjustment of brightness									
+adjustment of brightness									
 - to create even distribution of intensities									
 									
-5. find potential lesions									
+find potential lesions									
 - convert RGB images to HSV									
 - extract range of  hue values (different range between day and night images)						
 - apply morphological operations (dilation, erosion) to remove noise									
 									
-6. find contours									
+find contours									
 - apply contours (vector of points) to potential lesions									
 - exclude contours near to the image border									
 - set contour area size cut-off									
 - extract geometrical features for all contours: mass center, minimum enclosing circle, radius									
 									
-7. processing of contours (to extract real lesions)									
+processing of contours (to extract real lesions)									
 - compare all candidates with each other via area of intersecting circles (minimum enclosing circles)	-->	possibility to insert manual determined lesions (necessary parameters: mass point (x, y), lesions area)
 - if candidate is inside of another, add area to bigger one									
 - calculate all distances between mass points to all given lesions from the previous picture									
@@ -43,10 +48,9 @@ divide same candidates:
 calculate growth of lesion areas at night pictures									
 - set area size of lesions from first night picture to areas of last day image 									
 - add the difference between areas of night images to calculated one --> save parameters of last evaluated lesion (mass point (x, y), lesions area):							→ manual adjustment possible to continue with better results
-
-8. draw proofed lesions and areas									
+draw proofed lesions and areas									
 									
-9. save results									
+save results									
 - images with lesion numbers and areas									
 - timepoints, time after inoculation, lesion numbers and areas to text file									
 
