@@ -12,7 +12,7 @@ bandpass adjustment of uneven illumination (all pictures are much brighter in th
 - Fiji macro for FFT bandpass filter: filter_large=40, filter_small=3, suppress=None, tolerance=5, autoscale, saturate	
 - example:
 
-<img src="https://github.com/NIB-SI/circadian-lesion/blob/main/example/D572%20-%2020170413_204628.bmp" width="500"> | <img src="https://github.com/NIB-SI/circadian-lesion/blob/main/example/D574%20-%2020170413_205128.tif" width="500"> | 
+<img src="https://github.com/NIB-SI/circadian-lesion/blob/main/example/D572%20-%2020170413_204628.bmp" width="300"> | <img src="https://github.com/NIB-SI/circadian-lesion/blob/main/example/D572%20-%2020170413_204628.jpg" width="300"> | 
 
 ## Running .cpp files
 
