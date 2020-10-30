@@ -12,7 +12,8 @@ bandpass adjustment of uneven illumination (all pictures are much brighter in th
 - Fiji macro for FFT bandpass filter: filter_large=40, filter_small=3, suppress=None, tolerance=5, autoscale, saturate	
 - example:
 
-file:///media/jpfeil/Seagate%20Backup%20Plus%20Drive/CV/Leaves/visible%20light/Rywal%200-14%20dpi%20each%205%20min%20(point%20zero%202017_04_07%20at%2008.00.00)%20ruler/D572%20-%2020170413_204628.bmp
+https://github.com/NIB-SI/circadian-lesion/blob/main/example/D572%20-%2020170413_204628.bmp
+https://github.com/NIB-SI/circadian-lesion/blob/main/example/D574%20-%2020170413_205128.tif
 
 ## Running .cpp files
 
