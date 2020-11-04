@@ -2,7 +2,7 @@
 
 Necessary software: 
 - Fiji https://imagej.net/Fiji + FFT bandpass filter https://imagej.nih.gov/ij/plugins/fft-filter.html
-- OpenCV3.1.0 and OpenCV-contrib3.1.0: https://github.com/NIB-SI/circadian-lesion/blob/main/Installation_OpenCV3.1.0
+- OpenCV-3.1.0 and OpenCV_contrib-3.1.0: https://github.com/NIB-SI/circadian-lesion/blob/main/Installation_OpenCV3.1.0
 
 # Algorithms									
 									
@@ -15,6 +15,16 @@ bandpass adjustment of uneven illumination (all pictures are much brighter in th
 <img src="https://github.com/NIB-SI/circadian-lesion/blob/main/example/D572%20-%2020170413_204628.bmp" width="400"> <img src="https://github.com/NIB-SI/circadian-lesion/blob/main/example/D572%20-%2020170413_204628.jpg" width="400"> 
 
 ## Running .cpp files
+
+- create test-folder at your HOME directory copy respective .cpp file 
+- rename .cpp file e. g. Rywal 7-18 dpi each 6 hours (point zero 2017_09_01 at 07.00.00).cpp to Rywal7-18.cpp (remove spaces)
+- create CMakeLists.txt
+- run cmake .
+- run make
+- ./Rywal7-18 'input_folder'
+
+
+## Documentation of algorithms/methods
 
 **int main()**	
 
