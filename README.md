@@ -16,13 +16,31 @@ bandpass adjustment of uneven illumination (all pictures are much brighter in th
 
 ## Running .cpp files
 
-- create test-folder at your HOME directory copy respective .cpp file 
+- create test-folder at your HOME directory and copy respective .cpp file 
 - rename .cpp file e. g. Rywal 7-18 dpi each 6 hours (point zero 2017_09_01 at 07.00.00).cpp to Rywal7-18.cpp (remove spaces)
+- create folders results/filtered_lesions within the test-folder
+- copy input images to test-folder
 - create CMakeLists.txt
 - run cmake .
 - run make
 - ./Rywal7-18 'input_folder'
 
+- example: 
+
+## Output
+
+- Terminal
+1. row file number
+
+following rows: timepoint | Time after inoculation [min] | lesion area
+red marked timepoints indicate night images
+
+paramters of last image (posibility to insert these paramters to a .cpp file with other settings e. g. Part1/Part2/Part3 to receive optimal results, it's also possible to insert artificial lesion parameters here)
+lesion indices
+lesion areas
+mass points
+radii
+centers
 
 ## Documentation of algorithms/methods
 
