@@ -2,7 +2,7 @@
 
 Necessary software: 
 - Fiji https://imagej.net/Fiji + FFT bandpass filter https://imagej.nih.gov/ij/plugins/fft-filter.html
-- OpenCV3.1.0 and OpenCV-contrib3.1.0 https://opencv.org/:  
+- OpenCV3.1.0 and OpenCV-contrib3.1.0 https://opencv.org/:  https://github.com/NIB-SI/circadian-lesion/blob/main/Installation_OpenCV3.1.0
 
 # Algorithms									
 									
