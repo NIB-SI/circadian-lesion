@@ -25,7 +25,7 @@ bandpass adjustment of uneven illumination (all pictures are much brighter in th
 - run make
 - ./Rywal7-18 'input_folder'
 
-- example: 
+- example: https://github.com/NIB-SI/circadian-lesion/tree/main/example_leaves
 
 ## Output
 
