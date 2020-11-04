@@ -2,7 +2,7 @@
 
 Necessary software: 
 - Fiji https://imagej.net/Fiji + FFT bandpass filter https://imagej.nih.gov/ij/plugins/fft-filter.html
-- OpenCV4.1.2 https://opencv.org/ 
+- OpenCV3.1.0 and OpenCV-contrib3.1.0 https://opencv.org/:  
 
 # Algorithms									
 									
