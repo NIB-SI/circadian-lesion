@@ -29,18 +29,18 @@ bandpass adjustment of uneven illumination (all pictures are much brighter in th
 
 ## Output
 
-- Terminal
+Terminal:
 1. row file number
 
 following rows: timepoint | Time after inoculation [min] | lesion area
 red marked timepoints indicate night images
 
-paramters of last image (posibility to insert these paramters to a .cpp file with other settings e. g. Part1/Part2/Part3 to receive optimal results, it's also possible to insert artificial lesion parameters here)
-lesion indices
-lesion areas
-mass points
-radii
-centers
+paramters of last image (possibility to insert these paramters to a .cpp file with other settings e. g. Part1/Part2/Part3 to receive optimal results, it's also possible to insert artificial lesion parameters here)
+-lesion indices
+-lesion areas
+-mass points
+-radii
+-centers
 
 ## Documentation of algorithms/methods
 
