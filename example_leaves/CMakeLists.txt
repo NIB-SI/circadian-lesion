@@ -1,0 +1,6 @@
+set (CMAKE_CXX_STANDARD 11)
+cmake_minimum_required(VERSION 2.8)
+project( Rywal7-18 )
+find_package( OpenCV REQUIRED )
+add_executable(Rywal7-18 Rywal7-18.cpp )
+target_link_libraries( Rywal7-18 ${OpenCV_LIBS} )
