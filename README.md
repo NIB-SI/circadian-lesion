@@ -1,5 +1,8 @@
 # circadian-lesion
 
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.4893083.svg)](https://doi.org/10.5281/zenodo.4893083)
+
+
 Necessary software: 
 - Fiji https://imagej.net/Fiji + FFT bandpass filter https://imagej.nih.gov/ij/plugins/fft-filter.html
 - OpenCV-3.1.0 and OpenCV_contrib-3.1.0: https://github.com/NIB-SI/circadian-lesion/blob/main/Installation_OpenCV3.1.0
